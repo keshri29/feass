@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# CNAPP Dashboard - Frontend Assignment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a frontend assignment for AccuKnox, designed to create an interactive CNAPP (Cloud-Native Application Protection Platform) Dashboard. The dashboard features widgets for cloud account risk assessment, namespace-specific alerts, workload alerts, and more. The project is built using React, Context API for state management, and Chart.js for visualizations.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [State Management](#state-management)
+- [Widget Management](#widget-management)
+- [Screenshots](#screenshots)
+- [Contact](#contact)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Responsive Dashboard**: The dashboard is fully responsive and adapts to different screen sizes.
+- **Dynamic Widgets**: Add or remove widgets dynamically on the dashboard.
+- **State Management**: Implemented using Context API for managing global state.
+- **Chart Visualizations**: Visualize data using circular charts with different color indicators.
+- **Modern UI**: Clean and modern user interface using custom CSS and components.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. **Clone the repository:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   git clone https://github.com/keshri29/accuknox-Assignment-For-Frontend-Trainees.git
+   cd accuknox-Assignment-For-Frontend-Trainees
+   ```
 
-### `npm run build`
+2. **Install dependencies:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   Make sure you have Node.js installed. Then, install the required packages by running:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **Start the development server:**
 
-### `npm run eject`
+   Run the following command to start the application in development mode:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   The app will be available at [http://localhost:3000](http://localhost:3000).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+After starting the development server, you can access the dashboard at `http://localhost:3000`. 
 
-## Learn More
+- **Adding Widgets:** Use the "Add Widget +" button in the Navbar to dynamically add widgets to the dashboard.
+- **Removing Widgets:** Each widget has a "Remove" button that allows you to delete the widget from the dashboard.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## State Management
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+State management is handled globally using Context API. This allows the dynamic addition and removal of widgets across the application without prop drilling.
 
-### Code Splitting
+## Widget Management
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Widgets in the dashboard can be added or removed dynamically. The structure of the widgets is defined in the `Dashboard.js` file, and the content (such as charts) is managed within individual components like `CircularChart.js`.
 
-### Analyzing the Bundle Size
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Dashboard Screenshot](screenshots/dashboard.png)
+![Add Widget](screenshots/add-widget.png)
 
-### Making a Progressive Web App
+## Contact
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+For any queries, reach out to me at:
 
-### Advanced Configuration
+- **Email:** [keshrianurag690@gmail.com](mailto:keshrianurag690@gmail.com)
+- **Portfolio:** [vsanurag.netlify.app](https://vsanurag.netlify.app/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Feel free to fork this repository, submit issues, and contribute to the project.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+© 2024 Anurag Kumar
+```
 
-### `npm run build` fails to minify
+### Instructions:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Screenshots**: Replace the placeholder paths in the `Screenshots` section with actual paths to screenshots in your repository. You may need to add the images to a `screenshots` folder.
+   
+2. **Live Demo Link**: The link provided is based on your Netlify site. Ensure that the link works as expected. 
+
+3. **Contact Information**: Your email and portfolio link are included under the Contact section.
+
+This README provides a comprehensive guide for anyone who wants to understand, install, and use your project.
