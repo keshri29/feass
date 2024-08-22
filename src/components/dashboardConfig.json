@@ -1,0 +1,24 @@
+const dashboardConfig = [
+    {
+      category: "CSPM Executive Dashboard",
+      widgets: [
+        { id: 1, title: "Cloud Accounts", content: "Circular Chart Placeholder" },
+        { id: 2, title: "Cloud Account Risk Assessment", content: "Risk Chart Placeholder" },
+      ],
+    },
+    {
+      category: "CWPP Dashboard",
+      widgets: [
+        { id: 3, title: "Top 5 Namespace Specific Alerts", content: "Alerts Data Placeholder" },
+        { id: 4, title: "Workload Alerts", content: "Workload Data Placeholder" },
+      ],
+    },
+    {
+      category: "Registry Scan",
+      widgets: [
+        { id: 5, title: "Image Risk Assessment", content: "Vulnerability Chart Placeholder" },
+        { id: 6, title: "Image Security Issues", content: "Security Chart Placeholder" },
+      ],
+    },
+  ];
+  
